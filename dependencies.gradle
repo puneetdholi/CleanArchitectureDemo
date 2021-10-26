@@ -1,0 +1,138 @@
+ext {
+    //Android
+    androidBuildToolsVersion = "29.0.2"
+   // androidMinSdkVersion = 24
+    androidMinSdkVersion = 21
+    androidTargetSdkVersion = 29
+    androidCompileSdkVersion = 29
+
+    androidVersionCode = 3
+    androidVersionName = "1.0.3"
+    //Libraries
+
+    kotlinVersion = '1.2.61'
+    //kotlinVersion = '1.3.50'
+    butterKnifeVersion = '7.0.1'
+    recyclerViewVersion = '21.0.3'
+    rxJavaVersion = '2.2.12'
+    rxKotlinVersion = '2.4.0'
+    rxAndroidVersion = '2.1.1'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.1'
+    okHttpVersion = '3.10.0'
+    androidAnnotationsVersion = '21.0.3'
+    retrofitVersion = '2.4.0'
+    roomVersion = '1.1.1'
+    supportLibraryVersion = '28.0.0'
+    timberVersion = '4.7.0'
+    glideVersion = '4.9.0'
+    daggerVersion = '2.16'
+    glassfishAnnotationVersion = '10.0-b28'
+    moshiVersion = '1.6.0'
+    constraintLayoutVersion = '1.1.3'
+    pinViewVersion = 'v1.3'
+
+    //Testing
+    robolectricVersion = '3.4.2'
+    jUnitVersion = '4.12'
+    assertJVersion = '3.8.0'
+    mockitoVersion = '1.9.5'
+    dexmakerVersion = '1.0'
+    espressoVersion = '3.0.0'
+    testingSupportLibVersion = '0.1'
+    mockitoKotlinVersion = '1.5.0'
+    mockitoAndroidVersion = '2.8.47'
+    androidSupportRunnerVersion = '1.0.0'
+    androidSupportRulesVersion = '1.0.0'
+    dexmakerMockitoversion = '2.2.0'
+    runnerVersion = '0.5'
+    awsSDKVersion = '2.16+'
+    awsSDKVersionWithaar = '2.16.+@aar'
+
+    domainDependencies = [
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}"
+    ]
+
+
+    presentationDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            okHttp:             "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger:       "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            retrofit:           "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter:  "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter:    "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            archRuntime: 'androidx.lifecycle:lifecycle-runtime:2.0.0',
+            archExtensions: 'androidx.lifecycle:lifecycle-extensions:2.0.0',
+            archCompiler: 'androidx.lifecycle:lifecycle-compiler:2.0.0',
+            archLiveDataRx: 'androidx.lifecycle:lifecycle-reactivestreams:2.0.0',
+            timber:             "com.jakewharton.timber:timber:${timberVersion}",
+            awsAuthSDK:        "com.amazonaws:aws-android-sdk-auth-userpools:${awsSDKVersion}"
+    ]
+
+    dataDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            okHttp:             "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger:       "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            retrofit:           "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter:  "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter:    "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            timber:             "com.jakewharton.timber:timber:${timberVersion}",
+            awsSDKClient:       "com.amazonaws:aws-android-sdk-mobile-client:${awsSDKVersion}",
+            cognitoAuth :       "com.amazonaws:aws-android-sdk-cognitoauth:${awsSDKVersionWithaar} { transitive = true}"
+    ]
+
+    cacheDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            roomRuntime: 'androidx.room:room-runtime:2.0.0',
+            roomCompiler: 'androidx.room:room-compiler:2.0.0',
+            roomRxJava: 'androidx.room:room-rxjava2:2.0.0',
+            timber:             "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+    remoteDependencies = [
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            gson:               "com.google.code.gson:gson:${gsonVersion}",
+            rxKotlin:           "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            kotlin:             "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+            okHttp:             "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger:       "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            retrofit:           "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter:  "com.squareup.retrofit2:converter-moshi:${retrofitVersion}",
+            retrofitAdapter:    "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            moshi:              "com.squareup.moshi:moshi:${moshiVersion}",
+            moshiKotlin:        "com.squareup.moshi:moshi-kotlin-codegen:${moshiVersion}",
+            timber:             "com.jakewharton.timber:timber:${timberVersion}"
+    ]
+
+}
